@@ -24,4 +24,3 @@ snap install lxd
 /snap/bin/lxd init
 ! lxc -h >/dev/null 2>&1 && echo 'alias lxc="/snap/bin/lxc"' >> /root/.bashrc && source /root/.bashrc
 export PATH=$PATH:/snap/bin
-main
