@@ -20,6 +20,7 @@ ovz_no(){
 }
 apt update
 apt install curl wget sudo dos2unix ufw snapd -y
+ufw disable
 snap install lxd
 /snap/bin/lxd init
 ! lxc -h >/dev/null 2>&1 && echo 'alias lxc="/snap/bin/lxc"' >> /root/.bashrc && source /root/.bashrc
